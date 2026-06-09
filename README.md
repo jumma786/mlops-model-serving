@@ -7,7 +7,7 @@
 ![XGBoost](https://img.shields.io/badge/XGBoost-champion-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-> **Part of the MLOps Portfolio Series** — Project 5 of 10  
+> **Part of the [MLOps Portfolio Series](https://github.com/jumma786/mlops-portfolio)** — Project 5 of 10  
 > Deploys the XGBoost champion model from Project 4 as a production FastAPI service — containerised with Docker, tested with pytest, and ready for Cloud Run deployment.
 
 ---
