@@ -61,6 +61,10 @@ jobs:
       - name: Test Docker container
         run: |
           docker run -d -p 8000:8000 --name test-api mlops-model-serving:latest
-          sleep 10
+          for i in $(seq 1 15); do
+            sleep 3
+            curl -sf http://localhost:8000/health && echo "API ready" && break
+            echo "Attempt $i/15 — waiting..."
+          done
           curl -f http://localhost:8000/health
           docker stop test-api
